@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(233, 70, 151) 0%, rgb(57, 96, 239) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+
+.nova-tarefa-container {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(30, 30, 30, 0.335);
+    display: flex;
+}
+
+.nova-tarefa-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.nova-tarefa-container input:focus {
+    outline: none;
+    border-color: #a553e5;
+}
+
+.nova-tarefa-container ::-webkit-input-placeholder {
+    opacity: 80%;
+}
+
+.nova-tarefa-botao {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #a553e5;
+    color: white;
+    padding: 15px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.nova-tarefa-botao:hover{
+    background-color: #ba7ee8;
+}
+
+.tarefas-container {
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(30, 30, 30, 0.335);
+    width: 100%;
+}
+
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.tarefa-item i {
+    background-color: #a553e5;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.tarefa-item i:hover {
+    background-color: #e55353;
+    cursor: pointer;
+}
+
+.tarefa-item p {
+    cursor: default;
+}
+
+/* Utilidades */
+
+.erro {
+    border: 2px solid rgb(238, 82, 82) !important;
+}
+
+.erro::placeholder {
+    color: rgb(238, 82, 82);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #2ec35f;
+}
